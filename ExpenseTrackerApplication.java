@@ -135,6 +135,7 @@ public class ExpenseTrackerApplication {
     }
 
     private void saveAllToFile() {
+        System.out.print("For Reference file path is resources/file.txt ");
         System.out.print("Enter CSV file path: ");
         String path = scanner.nextLine().trim();
 
@@ -149,6 +150,7 @@ public class ExpenseTrackerApplication {
 
     private void loadFile() {
         try {
+            System.out.print("For Reference file path is resources/file.txt ");
             System.out.print("Enter CSV file path: ");
             String path = scanner.nextLine().trim();
             File file = new File(path);
